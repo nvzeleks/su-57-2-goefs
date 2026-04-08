@@ -2,11 +2,12 @@
   "name": "Sukhoi Su-57 Felon",
   "author": "Your Name",
   "description": "Custom SU-57 mod for GeoFS",
-
+  
   "model": "su57_felon.glb",
-
   "mass": 18500,
-
+  
+  "parts": [],        // <- ADD THIS LINE
+  
   "engines": [
     { "thrust": 160000, "afterburnerThrust": 220000 },
     { "thrust": 160000, "afterburnerThrust": 220000 }
@@ -20,17 +21,9 @@
     "yaw": 1.1
   },
 
-  "gear": {
-    "retractable": true
-  },
-
-  "controls": {
-    "throttle": true,
-    "pitch": true,
-    "roll": true,
-    "yaw": true
-  },
-
+  "gear": { "retractable": true },
+  "controls": { "throttle": true, "pitch": true, "roll": true, "yaw": true },
+  
   "cameras": [
     { "name": "Cockpit", "position": [0, 2, 8] },
     { "name": "Chase", "position": [0, 5, 20] }
